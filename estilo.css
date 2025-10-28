@@ -171,11 +171,9 @@ main {
   box-shadow: var(--shadow-md);
   overflow: visible;
   transition: all var(--transition-base);
-  z-index: 100; /* ✅ suficiente para estar encima del contenido, pero debajo del modal */
+  z-index: 100;
 }
 
-
- 
 .search-container:focus-within {
   box-shadow: var(--shadow-lg);
   transform: translateY(-2px);
@@ -189,6 +187,7 @@ main {
   outline: none;
   font-size: 1rem;
   color: var(--text-dark);
+  border-radius: 20px 0 0 20px;
 }
 
 .search-container input::placeholder {
@@ -203,6 +202,7 @@ main {
   cursor: pointer;
   transition: all var(--transition-base);
   font-size: 1.2rem;
+  border-radius: 0 20px 20px 0;
 }
 
 .search-btn:hover {
@@ -1094,4 +1094,5 @@ section:nth-of-type(5) {
   main div[style*="max-width: 960px"] img[alt*="Mapa"] {
     width: 100% !important;
   }
+
 }
